@@ -24,6 +24,8 @@ public class PlatformController {
     @Resource
     private PlatformService platformService;
 
+    private String message;
+
     @RequestMapping("/Information")
     public Map<String,Object> getInformation(@ApiParam(value = "分页")@RequestParam(required = true,defaultValue = "1") Integer page,
                                              ModelAndView modelAndView){
