@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yzedu.dao.HappyReadDao">
+    <resultMap id="BaseResultMap" type="com.yzedu.vo.HappyReadBean">
+        <id column="happy_read_id" jdbcType="INTEGER" property="happy_read_id"/>
+        <result column="happy_read_title" jdbcType="VARCHAR" property="happy_read_title"/>
+        <result column="happy_read_content" jdbcType="VARCHAR" property="happy_read_content"/>
+        <result column="happy_read_link" jdbcType="VARCHAR" property="happy_read_link"/>
+        <result column="happy_read_img" jdbcType="VARCHAR" property="happy_read_img"/>
+    </resultMap>
+    <sql id="BaseProperty">
+      happy_read_id,
+	  happy_read_title,
+	  happy_read_content,
+	  happy_read_link,
+	  happy_read_img
+    </sql>
+    <select id="getHappyReadList" resultMap="BaseResultMap">
+        select <include refid="BaseProperty"/>
+        from happy_read order by happy_read_id desc
+    </select>
+    
+</mapper>

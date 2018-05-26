@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yzedu.dao.BannerDao">
+    <resultMap id="BaseResultMap" type="com.yzedu.vo.BannerBean">
+        <id column="banner_id" jdbcType="INTEGER" property="banner_id"/>
+        <result column="banner_image" jdbcType="VARCHAR" property="banner_image"/>
+        <result column="banner_type" jdbcType="INTEGER" property="banner_type"/>
+        <result column="banner_link" jdbcType="VARCHAR" property="banner_link"/>
+    </resultMap>
+
+
+    <select id="getBannerList" resultMap="BaseResultMap" parameterType="Integer">
+      SELECT * FROM banner WHERE school_id= #{schoolId} order by banner_id desc
+    </select>
+
+
+</mapper>

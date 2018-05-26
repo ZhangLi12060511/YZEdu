@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yzedu.dao.ShowCourseDao">
+<resultMap id="BaseResultMap" type="com.yzedu.vo.CourseBean">
+    <id column="course_id" jdbcType="INTEGER" property="course_id"/>
+    <result column="course_code" jdbcType="VARCHAR" property="course_code"/>
+    <result column="course_name" jdbcType="VARCHAR" property="course_name"/>
+    <result column="course_introduce" jdbcType="VARCHAR" property="course_introduce"/>
+    <result column="course_teacher" jdbcType="INTEGER" property="course_teacher"/>
+    <result column=" course_sum_student" jdbcType="INTEGER" property="course_sum_student"/>
+    <result column="course_learn_student" jdbcType="INTEGER" property="course_learn_student"/>
+    <result column="course_cover" jdbcType="VARCHAR" property="course_cover"/>
+    <result column="course_sum" jdbcType="INTEGER" property="course_sum"/>
+    <result column="course_type" jdbcType="INTEGER" property="course_type"/>
+    <result column="course_price" jdbcType="DECIMAL" property="course_price"/>
+    <result column="course_finish" jdbcType="INTEGER" property="course_finish"/>
+</resultMap>
+    <sql id="BaseProperty">
+          course_id,
+      course_code,
+      course_name,
+      course_introduce,
+      course_teacher,
+      course_sum_student,
+      course_learn_student,
+      course_cover,
+      course_sum,
+      course_type,
+      course_price,
+      course_finish
+    </sql>
+
+    <select id="showCourseList" resultMap="BaseResultMap">
+        select <include refid="BaseProperty" />
+        from course order  by gmt_create desc
+    </select>
+</mapper>

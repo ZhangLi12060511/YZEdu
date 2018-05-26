@@ -1,7 +1,5 @@
 package com.yzedu.util;
 
-import io.swagger.models.auth.In;
-
 /**
  * @author zhangbenben on 2018/5/25 0025
  */

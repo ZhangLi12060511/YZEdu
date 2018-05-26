@@ -13,7 +13,7 @@ public class HappyReadBean {
 	private int happy_read_id;	// 悦读id
 	private String happy_read_title;// 悦读标题
 	private String happy_read_content; // 悦读文字内容
-	private String happy_link; // 悦读链接地址
+	private String happy_read_link; // 悦读链接地址
 	private String happy_read_img; // 封面图片
 	
 }
