@@ -170,7 +170,7 @@
     </update>
 
     <insert id="insertAdvice" parameterType="String">
-        insert into advice(advice_content) values(#{advice_content})
+        insert into advice(advice_content,gmt_create,gmt_modified) values(#{advice_content},now(),now())
     </insert>
 
 

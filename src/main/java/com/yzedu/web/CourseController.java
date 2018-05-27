@@ -6,7 +6,6 @@ import com.yzedu.util.Constant;
 import com.yzedu.vo.MessageBean;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
-import org.apache.log4j.Logger;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -23,7 +22,6 @@ import java.util.Map;
 @RequestMapping("/course")
 public class CourseController {
 
-    private static final Logger logger = Logger.getLogger(CourseController.class);
 
     @Resource
     private SelectService selectService;
@@ -57,7 +55,6 @@ public class CourseController {
             messageBean.setUser_id(user_id);
             selectService.addMessage(messageBean);
         } catch (Exception e){
-           logger.info("添加信息异常");
             modelAndView.addObject("result_code", Constant.ELECTIVE_FAILURE_CODE);
             modelAndView.addObject("message", Constant.ELECTIVE_FAILURE_MESSAGE);
             modelAndView.addObject("return_data", null);

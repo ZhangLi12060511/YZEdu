@@ -8,7 +8,6 @@
   <artifactId>YZEdu</artifactId>
   <version>1.0</version>
   <packaging>war</packaging>
-
   <name>YZEdu</name>
 
   <parent>

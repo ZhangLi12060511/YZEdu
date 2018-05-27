@@ -8,8 +8,6 @@ import com.yzedu.vo.MessageBean;
 import com.yzedu.vo.StudentBean;
 import com.yzedu.vo.TeacherBean;
 import com.yzedu.vo.UserBean;
-import io.swagger.models.auth.In;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -67,7 +65,7 @@ public class GeneralService {
     public void modifyAvatar(User user){
         generalDao.modifyAvatar(user);
     }
-    public List<MessageBean> getMessageList(@Param("user_id") Integer user_id){
+    public List<MessageBean> getMessageList( Integer user_id){
         return generalDao.getMessageList(user_id);
     }
 
@@ -75,19 +73,19 @@ public class GeneralService {
         generalDao.updateMessage(message_id,user_id);
     }
 
-    public void clearMessage(@Param("user_id ") Integer user_id){
+    public void clearMessage( Integer user_id){
         generalDao.clearMessage(user_id);
     }
 
-    public void insertAdvice(@Param("advice_content") String advice_content){
+    public void insertAdvice( String advice_content){
         generalDao.insertAdvice(advice_content);
     }
 
-    public void unbindStudent(@Param("user_id") Integer user_id,@Param("input_id") Integer input_id){
+    public void unbindStudent(Integer user_id, Integer input_id){
         generalDao.unbindStudent(user_id,input_id);
     }
 
-    public void unbindTeacher(@Param("user_id") Integer user_id,@Param("input_id") Integer input_id){
+    public void unbindTeacher(Integer user_id,Integer input_id){
         generalDao.unbindTeacher(user_id,input_id);
     }
 
