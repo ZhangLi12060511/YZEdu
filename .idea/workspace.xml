@@ -2,88 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90db2eeb-e08e-4754-a1ab-e1fc35891ada" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/config/CorsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/YZEdu-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/YZEdu-1.0.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/YZEdu-1.0.war.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/YZEdu-1.0.war.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/config/MybatisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/config/MybatisConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/config/SwaggerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/config/SwaggerConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/dao/AboutDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/dao/AboutDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/dao/AnnouncementDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/dao/AnnouncementDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/dao/BannerDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/dao/BannerDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/dao/CourseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/dao/CourseDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/dao/GeneralDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/dao/GeneralDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/dao/HappyReadDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/dao/HappyReadDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/dao/InformationDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/dao/InformationDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/dao/MyCourseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/dao/MyCourseDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/dao/PlatformDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/dao/PlatformDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/dao/SchoolsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/dao/SchoolsDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/dao/SelectDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/dao/SelectDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/dao/ShowCourseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/dao/ShowCourseDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/obj/MyCourse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/obj/MyCourse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/obj/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/obj/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/obj/Teacher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/obj/Teacher.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/obj/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/obj/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/service/AboutService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/service/AboutService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/service/AnnouncementService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/service/AnnouncementService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/service/BannerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/service/BannerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/service/CourseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/service/CourseService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/service/GeneralService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/service/GeneralService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/service/HappyReadService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/service/HappyReadService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/service/InformationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/service/InformationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/service/MyCourseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/service/MyCourseService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/service/PlatformService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/service/PlatformService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/service/SchoolsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/service/SchoolsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/service/SelectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/service/SelectService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/service/ShowCourseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/service/ShowCourseService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/util/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/util/Constant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/util/MD5Tools.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/util/MD5Tools.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/util/PageModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/util/PageModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/AbilityBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/AbilityBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/AnnouncementBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/AnnouncementBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/BannerBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/BannerBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/CircleDynamicBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/CircleDynamicBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/ClassificationBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/ClassificationBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/CommunicationBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/CommunicationBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/CommunicationComment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/CommunicationComment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/CommunicationImage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/CommunicationImage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/CommunicationPraise.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/CommunicationPraise.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/CourseBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/CourseBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/CourseMaterialBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/CourseMaterialBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/DynamicComment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/DynamicComment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/DynamicImage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/DynamicImage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/DynamicPraise.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/DynamicPraise.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/ExamBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/ExamBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/ExamItemBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/ExamItemBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/ExercisesBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/ExercisesBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/GradeBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/GradeBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/HappyReadBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/HappyReadBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/InformationBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/InformationBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/KnowledgeBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/KnowledgeBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/LessonBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/LessonBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/LiveAnnouncementBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/LiveAnnouncementBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/LiveRoomBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/LiveRoomBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/MessageBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/MessageBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/MistakeBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/MistakeBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/MyCourseBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/MyCourseBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/MyPracticalTrainingBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/MyPracticalTrainingBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/PracticalTrainingBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/PracticalTrainingBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/SchoolBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/SchoolBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/StudentBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/StudentBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/TaskBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/TaskBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/TeacherBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/TeacherBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/UserBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/UserBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/UserInfoBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/UserInfoBean.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/web/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/web/CourseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/web/GeneralController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/web/GeneralController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/web/LearnController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/web/LearnController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/web/PlatformController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/web/PlatformController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/web/SchoolController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/web/SchoolController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/web/TeachController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/web/TeachController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/YZEdu/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/YZEdu/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yzedu/web/GeneralController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/web/GeneralController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -98,93 +18,12 @@
     <favorites_list name="YZEdu" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GeneralDao.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resource/mapping/GeneralDao.xml">
+    <leaf>
+      <file leaf-file-name="GeneralController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/web/GeneralController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4080">
-              <caret line="136" column="13" selection-start-line="136" selection-start-column="13" selection-end-line="136" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GeneralDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/dao/GeneralDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1230">
-              <caret line="50" column="79" selection-start-line="50" selection-start-column="79" selection-end-line="50" selection-end-column="79" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/MessageBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-480">
-              <caret line="112" column="33" lean-forward="true" selection-start-line="112" selection-start-column="33" selection-end-line="112" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CorsConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/config/CorsConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TeacherBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/TeacherBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/StudentBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/UserBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="430">
+              <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -264,12 +103,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yzedu/dao/GeneralDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yzedu/web/CourseController.java" />
         <option value="$PROJECT_DIR$/src/resource/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/web/GeneralController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/yzedu/service/GeneralService.java" />
         <option value="$PROJECT_DIR$/src/resource/mapping/GeneralDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/yzedu/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yzedu/config/CorsConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/web/GeneralController.java" />
       </list>
     </option>
   </component>
@@ -302,7 +141,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="131" />
     <option name="y" value="94" />
     <option name="width" value="1346" />
@@ -316,6 +155,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -349,13 +189,21 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="yzedu" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="YZEdu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YZEdu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yzedu" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -478,12 +326,13 @@
       <workItem from="1527251139556" duration="11631000" />
       <workItem from="1527300002422" duration="62939000" />
       <workItem from="1527414708115" duration="304000" />
-      <workItem from="1527419576930" duration="786000" />
+      <workItem from="1527419576930" duration="1306000" />
+      <workItem from="1527425100574" duration="353000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76735000" />
+    <option name="totallyTimeSpent" value="77608000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -496,6 +345,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
@@ -509,16 +359,15 @@
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39871383" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329582" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.3279743" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.329582" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.329582" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31993568" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31993568" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3279743" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3258427" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32423756" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2647504" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info id="Learn" order="6" weight="0.32980332" />
@@ -527,6 +376,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.3279743" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329582" />
@@ -534,37 +384,37 @@
     <layout-to-restore>
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31993568" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3279743" />
       <window_info id="Image Layers" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31993568" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" weight="0.32980332" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32636657" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32423756" />
       <window_info id="Capture Tool" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.3279743" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329582" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" weight="0.329582" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.329582" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32980332" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
-      <window_info id="Learn" order="6" />
-      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.25567323" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329582" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
+      <window_info id="Learn" order="6" weight="0.32980332" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.3279743" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.329582" />
-      <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39871383" />
+      <window_info anchor="right" id="Bean Validation" order="8" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -862,13 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/web/GeneralController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8820">
-          <caret line="294" column="27" lean-forward="true" selection-start-line="294" selection-start-column="26" selection-end-line="299" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/UserBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -887,9 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1230">
           <caret line="50" column="79" selection-start-line="50" selection-start-column="79" selection-end-line="50" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -918,9 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
           <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -936,8 +773,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-480">
-          <caret line="112" column="33" lean-forward="true" selection-start-line="112" selection-start-column="33" selection-end-line="112" selection-end-column="33" />
+        <state relative-caret-position="750">
+          <caret line="135" column="35" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/web/GeneralController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
         </state>
       </provider>
     </entry>

@@ -39,6 +39,12 @@ public class GeneralController {
                                            @ApiParam(value = "用户类型")@RequestParam(required = true) Integer user_type){
         UserBean userBean = generalService.selectByUserAccount(user_account);
 
+        if(userBean == null){
+            modelAndView.addObject("result_code",12101);
+            modelAndView.addObject("message","登录失败，用户不存在");
+            modelAndView.addObject("return_data", null);
+            return  modelAndView.getModel();
+        }
         Integer userId = userBean.getUser_id();
         User user = generalService.selectByUserId(userId);
         String userPassword = user.getUser_password();
@@ -46,12 +52,7 @@ public class GeneralController {
         StudentBean studentBean = generalService.studentLogin(userId);
         TeacherBean teacherBean =generalService.teacherLogin(userId);
 
-        if(userBean == null){
-            modelAndView.addObject("result_code",12101);
-            modelAndView.addObject("message","登录失败，用户不存在");
-            modelAndView.addObject("return_data", null);
-            return  modelAndView.getModel();
-        }
+
         if(user_type == 1){
             if(user_account.equals(userAccount) && password.equals(MD5Tools.MD5(userPassword))){
                 if(studentBean == null){
@@ -93,7 +94,7 @@ public class GeneralController {
         }
         return  modelAndView.getModel();
     }
-    @ApiOperation("用户账号登录")
+    @ApiOperation("院校账号登录")
     @RequestMapping(value = "/SchoolLogin",method = RequestMethod.POST)
     public Map<String,Object> AccountLogin(ModelAndView modelAndView,
                                            @ApiParam(value = "账号")@RequestParam(required = true) String user_account,
