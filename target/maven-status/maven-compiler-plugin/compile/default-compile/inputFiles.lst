@@ -13,15 +13,16 @@ G:\YZEdu\src\main\java\com\yzedu\vo\LiveRoomBean.java
 G:\YZEdu\src\main\java\com\yzedu\vo\MyCourseBean.java
 G:\YZEdu\src\main\java\com\yzedu\obj\User.java
 G:\YZEdu\src\main\java\com\yzedu\vo\ClassificationBean.java
+G:\YZEdu\src\main\java\com\yzedu\config\CorsConfig.java
 G:\YZEdu\src\main\java\com\yzedu\web\LearnController.java
 G:\YZEdu\src\main\java\com\yzedu\vo\CommunicationComment.java
 G:\YZEdu\src\main\java\com\yzedu\vo\ExamBean.java
 G:\YZEdu\src\main\java\com\yzedu\vo\SchoolBean.java
 G:\YZEdu\src\main\java\com\yzedu\service\CourseService.java
 G:\YZEdu\src\main\java\com\yzedu\vo\TeacherBean.java
-G:\YZEdu\src\main\java\com\yzedu\obj\Student.java
 G:\YZEdu\src\main\java\com\yzedu\obj\Teacher.java
 G:\YZEdu\src\main\java\com\yzedu\vo\DynamicImage.java
+G:\YZEdu\src\main\java\com\yzedu\obj\Student.java
 G:\YZEdu\src\main\java\com\yzedu\dao\BannerDao.java
 G:\YZEdu\src\main\java\com\yzedu\dao\ShowCourseDao.java
 G:\YZEdu\src\main\java\com\yzedu\vo\CommunicationImage.java
