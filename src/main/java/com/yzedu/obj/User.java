@@ -47,4 +47,8 @@ public class User {
         this.user_id = user_id;
         this.user_avatar = user_avatar;
     }
+
+    public User(){
+        super();
+    }
 }

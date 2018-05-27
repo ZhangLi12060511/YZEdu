@@ -48,13 +48,13 @@ public class GeneralController {
         Integer userId = userBean.getUser_id();
         User user = generalService.selectByUserId(userId);
         String userPassword = user.getUser_password();
-        String userAccount = user.getUser_account();
+        String userAccount = user.getUser_phone();
         StudentBean studentBean = generalService.studentLogin(userId);
         TeacherBean teacherBean =generalService.teacherLogin(userId);
 
 
         if(user_type == 1){
-            if(user_account.equals(userAccount) && password.equals(MD5Tools.MD5(userPassword))){
+            if(user_account.equals(userAccount) && MD5Tools.MD5(password).equals(userPassword)){
                 if(studentBean == null){
                     modelAndView.addObject("result_code",80);
                     modelAndView.addObject("message","登录成功");
@@ -73,7 +73,7 @@ public class GeneralController {
                 return  modelAndView.getModel();
             }
         } else if (user_type == 2) {
-            if(user_account.equals(userAccount) && password.equals(MD5Tools.MD5(userPassword))){
+            if(user_account.equals(userAccount) && MD5Tools.MD5(password).equals(userPassword)){
                 if(teacherBean == null){
                     modelAndView.addObject("result_code",80);
                     modelAndView.addObject("message","登录成功");
@@ -96,7 +96,7 @@ public class GeneralController {
     }
     @ApiOperation("院校账号登录")
     @RequestMapping(value = "/SchoolLogin",method = RequestMethod.POST)
-    public Map<String,Object> AccountLogin(ModelAndView modelAndView,
+    public Map<String,Object> SchoolLogin(ModelAndView modelAndView,
                                            @ApiParam(value = "账号")@RequestParam(required = true) String user_account,
                                            @ApiParam(value = "密码")@RequestParam(required = true) String password,
                                            @ApiParam(value = "用户类型")@RequestParam(required = true) Integer user_type,

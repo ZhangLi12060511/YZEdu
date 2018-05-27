@@ -124,8 +124,8 @@
             sch.school_name
         FROM
             teacher AS te
-        INNER JOIN `user` AS u ON te.user_id = u.user_id
-        INNER JOIN school AS sch ON te.school_id = sch.school_id  WHERE te.teacher_number=#{user_account} AND te.school_id=#{school_id}
+        left JOIN `user` AS u ON te.user_id = u.user_id
+        left JOIN school AS sch ON te.school_id = sch.school_id  WHERE te.teacher_number=#{user_account} AND te.school_id=#{school_id}
     </select>
 
     <select id="selectByStudentNumber" parameterType="String" resultType="com.yzedu.obj.Student">
