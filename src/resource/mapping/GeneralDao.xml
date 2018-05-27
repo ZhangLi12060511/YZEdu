@@ -32,6 +32,15 @@
         <result column="school_id" jdbcType="INTEGER" property="school_id"/>
         <result column="school_name" jdbcType="VARCHAR" property="school_name"/>
     </resultMap>
+    <resultMap id="MessageBeanMap" type="com.yzedu.vo.MessageBean">
+        <id column="message_id" jdbcType="INTEGER" property="message_id"/>
+        <result column="message_type" jdbcType="VARCHAR" property="message_type"/>
+        <result column="message_content" jdbcType="VARCHAR" property="message_content"/>
+        <result column="message_link" jdbcType="VARCHAR" property="message_link"/>
+        <result column="gmt_create" jdbcType="VARCHAR" property="message_date"/>
+        <result column="message_read" jdbcType="INTEGER" property="message_read"/>
+        <result column="user_id" jdbcType="INTEGER" property="user_id"/>
+    </resultMap>
 
 
 
@@ -146,5 +155,47 @@
         update `user` set user_avatar = #{user_avatar}
          where user_id=#{user_id}
     </update>
+
+    <select id="getMessageList" parameterType="Integer" resultMap="MessageBeanMap">
+        select message_id,message_type,message_content,message_link,message_read,user_id,gmt_create
+          from message where user_id = #{user_id} and gmt_del = 0
+    </select>
+
+    <update id="updateMessage">
+        update message set message_read = 1 where message = #{message_id} and user_id = #{user_id}
+    </update>
+
+    <update id="clearMessage" parameterType="Integer">
+        update message set gmt_del = 1 where user_id = #{user_id}
+    </update>
+
+    <insert id="insertAdvice" parameterType="String">
+        insert into advice(advice_content) values(#{advice_content})
+    </insert>
+
+
+    <update id="bindStudent">
+        update student set user_id = #{user_id} where student_id = #{input_id}
+    </update>
+
+    <update id="bindTeacher">
+        update teacher set user_id = #{user_id} where teacher_id = #{input_id}
+    </update>
+
+    <update id="unbindStudent">
+        update student set user_id = #{user_id} where student_id = #{input_id}
+    </update>
+
+    <update id="unbindTeacher">
+        update teacher set user_id = #{user_id} where teacher_id = #{input_id}
+    </update>
+
+    <select id="selectByStudentId" parameterType="Integer" resultType="com.yzedu.obj.Student">
+        select * from student where student_id=#{student_id} and user_id=0
+    </select>
+
+    <select id="selectByTeacherId" parameterType="Integer" resultType="com.yzedu.obj.Student">
+        select * from teacher where teacher_id=#{teacher_id} and user_id=0
+    </select>
 
 </mapper>

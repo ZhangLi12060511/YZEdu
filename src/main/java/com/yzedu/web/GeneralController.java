@@ -6,6 +6,7 @@ import com.yzedu.obj.User;
 import com.yzedu.service.GeneralService;
 import com.yzedu.util.Constant;
 import com.yzedu.util.MD5Tools;
+import com.yzedu.vo.MessageBean;
 import com.yzedu.vo.StudentBean;
 import com.yzedu.vo.TeacherBean;
 import com.yzedu.vo.UserBean;
@@ -19,6 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.annotation.Resource;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -192,7 +194,6 @@ public class GeneralController {
     public Map<String,Object> ModifyAvatar(ModelAndView modelAndView,
                                            @ApiParam(value = "用户id")@RequestParam(required = true) Integer user_id,
                                            @ApiParam(value = "头像")@RequestParam(required = true) String user_avatar){
-
         User user = new User(user_id,user_avatar);
         generalService.modifyAvatar(user);
         modelAndView.addObject("result_code",0);
@@ -200,9 +201,107 @@ public class GeneralController {
         modelAndView.addObject("return_data", null);
         return modelAndView.getModel();
     }
+    @ApiOperation("用户消息列表")
+    @RequestMapping(value = "/Message",method = RequestMethod.GET)
+    public Map<String,Object> getMessage(ModelAndView modelAndView,
+                                           @ApiParam(value = "用户id")@RequestParam(required = true) Integer user_id){
 
+        List<MessageBean> messageBeanList = generalService.getMessageList(user_id);
+        modelAndView.addObject("result_code",0);
+        modelAndView.addObject("message","执行成功");
+        modelAndView.addObject("return_data", messageBeanList);
+        return modelAndView.getModel();
+    }
+    @ApiOperation("用户读消息")
+    @RequestMapping(value = "/ReadMessage",method = RequestMethod.GET)
+    public Map<String,Object> readMessage(ModelAndView modelAndView,
+                                           @ApiParam(value = "用户id")@RequestParam(required = true) Integer user_id,
+                                          @ApiParam(value = "消息id")@RequestParam(required = true) Integer message_id ){
 
+        generalService.updateMessage(message_id,user_id);
+        modelAndView.addObject("result_code",0);
+        modelAndView.addObject("message","读取成功");
+        modelAndView.addObject("return_data", null);
+        return modelAndView.getModel();
+    }
 
+    @ApiOperation("清空消息列表")
+    @RequestMapping(value = "/ClearMessage",method = RequestMethod.GET)
+    public Map<String,Object> readMessage(ModelAndView modelAndView,
+                                          @ApiParam(value = "用户id")@RequestParam(required = true) Integer user_id){
+        generalService.clearMessage(user_id);
+        modelAndView.addObject("result_code",0);
+        modelAndView.addObject("message","清空成功");
+        modelAndView.addObject("return_data", null);
+        return modelAndView.getModel();
+    }
+    @ApiOperation("问题反馈")
+    @RequestMapping(value = "/Advice",method = RequestMethod.GET)
+    public Map<String,Object> advice(ModelAndView modelAndView,
+                                          @ApiParam(value = "反馈内容")@RequestParam(required = true) String  advice_content){
+        generalService.insertAdvice(advice_content);
+        modelAndView.addObject("result_code",0);
+        modelAndView.addObject("message","反馈成功");
+        modelAndView.addObject("return_data", null);
+        return modelAndView.getModel();
+    }
+    @ApiOperation("绑定学生/教师")
+    @RequestMapping(value = "/Bound",method = RequestMethod.GET)
+    public Map<String,Object> advice(ModelAndView modelAndView,
+                                     @ApiParam(value = "用户id")@RequestParam(required = true) Integer  user_id,
+                                     @ApiParam(value = "输入id")@RequestParam(required = true) Integer  input_id,
+                                     @ApiParam(value = "用户类型")@RequestParam(required = true) Integer  user_type){
+        if(user_type == 1){
+            Student student = generalService.selectByStudentId(input_id);
+            if(student == null){
+                generalService.bindStudent(user_id,input_id);
+                modelAndView.addObject("result_code",0);
+                modelAndView.addObject("message","绑定成功");
+                modelAndView.addObject("return_data", null);
+                return modelAndView.getModel();
+            }
+            modelAndView.addObject("result_code",12011);
+            modelAndView.addObject("message","绑定失败，该用户已绑定手机号");
+            modelAndView.addObject("return_data", null);
+            return modelAndView.getModel();
+        }
+        if(user_type == 2){
+                Teacher teacher = generalService.selectByTeacherId(input_id);
+                if(teacher == null){
+                    generalService.bindTeacher(user_id,input_id);
+                    modelAndView.addObject("result_code",0);
+                    modelAndView.addObject("message","绑定成功");
+                    modelAndView.addObject("return_data", null);
+                    return modelAndView.getModel();
+                }
+            modelAndView.addObject("result_code",12011);
+            modelAndView.addObject("message","绑定失败，该用户已绑定手机号");
+            modelAndView.addObject("return_data", null);
+            return modelAndView.getModel();
+        }
+        return modelAndView.getModel();
+    }
+    @ApiOperation("取消绑定")
+    @RequestMapping(value = "/UnBound",method = RequestMethod.GET)
+    public Map<String,Object> unBound(ModelAndView modelAndView,
+                                     @ApiParam(value = "用户id")@RequestParam(required = true) Integer  user_id,
+                                     @ApiParam(value = "输入id")@RequestParam(required = true) Integer  input_id,
+                                     @ApiParam(value = "用户类型")@RequestParam(required = true) Integer  user_type){
+
+        if(user_type == 1){
+                generalService.unbindStudent(user_id,input_id);
+                modelAndView.addObject("result_code",0);
+                modelAndView.addObject("message","解绑成功");
+                modelAndView.addObject("return_data", null);
+        }
+        if(user_type == 2){
+            generalService.unbindTeacher(user_id,input_id);
+            modelAndView.addObject("result_code",0);
+            modelAndView.addObject("message","解绑成功");
+            modelAndView.addObject("return_data", null);
+        }
+        return modelAndView.getModel();
+    }
 
     String generateAccount(String userPhone){
         int nums[]={6,1,3,5,0,4,7,8,9,2};

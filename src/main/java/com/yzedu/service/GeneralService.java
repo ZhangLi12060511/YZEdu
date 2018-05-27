@@ -4,6 +4,7 @@ import com.yzedu.dao.GeneralDao;
 import com.yzedu.obj.Student;
 import com.yzedu.obj.Teacher;
 import com.yzedu.obj.User;
+import com.yzedu.vo.MessageBean;
 import com.yzedu.vo.StudentBean;
 import com.yzedu.vo.TeacherBean;
 import com.yzedu.vo.UserBean;
@@ -12,6 +13,7 @@ import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @author zhangbenben on 2018/5/27 0027
@@ -64,6 +66,45 @@ public class GeneralService {
     }
     public void modifyAvatar(User user){
         generalDao.modifyAvatar(user);
+    }
+    public List<MessageBean> getMessageList(@Param("user_id") Integer user_id){
+        return generalDao.getMessageList(user_id);
+    }
+
+    public void updateMessage( Integer message_id, Integer user_id){
+        generalDao.updateMessage(message_id,user_id);
+    }
+
+    public void clearMessage(@Param("user_id ") Integer user_id){
+        generalDao.clearMessage(user_id);
+    }
+
+    public void insertAdvice(@Param("advice_content") String advice_content){
+        generalDao.insertAdvice(advice_content);
+    }
+
+    public void unbindStudent(@Param("user_id") Integer user_id,@Param("input_id") Integer input_id){
+        generalDao.unbindStudent(user_id,input_id);
+    }
+
+    public void unbindTeacher(@Param("user_id") Integer user_id,@Param("input_id") Integer input_id){
+        generalDao.unbindTeacher(user_id,input_id);
+    }
+
+    public Student selectByStudentId(Integer student_id){
+        return generalDao.selectByStudentId(student_id);
+    }
+
+    public Teacher selectByTeacherId(Integer teacher_id){
+        return generalDao.selectByTeacherId(teacher_id);
+    }
+
+    public void bindStudent(Integer user_id,Integer input_id){
+        generalDao.bindStudent(user_id,input_id);
+    }
+
+    public void bindTeacher( Integer user_id, Integer input_id){
+        generalDao.bindStudent(user_id,input_id);
     }
 
 }
