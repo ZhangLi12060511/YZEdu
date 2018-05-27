@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yzedu.dao.SelectDao">
+    <resultMap id="BaseResultMap" type="com.yzedu.obj.MyCourse">
+        <id column="mycourse_id" jdbcType="INTEGER" property="mycourse_id"/>
+        <result column="user_id" jdbcType="INTEGER" property="user_id"/>
+        <result column="course_id" jdbcType="INTEGER" property="course_id"/>
+        <result column="learn_state" jdbcType="INTEGER" property="learn_state"/>
+        <result column="gmt_create" jdbcType="VARCHAR" property="gmt_create"/>
+        <result column="gmt_modified" jdbcType="VARCHAR" property="gmt_modified"/>
+    </resultMap>
+
+    <select id="selectMyCourseByCouseIdAndUserId" resultMap="BaseResultMap">
+        select * from mycourse where user_id=#{userId} and course_id=#{courseId}
+    </select>
+
+    <insert id="addMycourse" parameterType="com.yzedu.obj.MyCourse">
+        insert into mycourse(user_id,course_id,gmt_create,gmt_modified)
+          values(#{user_id},#{course_id},now(),now())
+    </insert>
+
+    <insert id="addMessage" parameterType="com.yzedu.vo.MessageBean">
+        insert into message(message_type,message_content,message_link,gmt_create,gmt_modified,user_id)
+          values (#{message_type},#{message_content},#{message_link},now(),now(),#{user_id})
+    </insert>
+
+    <select id="selectCourseNameByCourseId" resultType="String" parameterType="Integer">
+        select  course_name from course where  course_id = #{courseId}
+    </select>
+    
+    <delete id="deleteMyCourseByCouseIdAndUserId">
+        delete from mycourse where course_id=#{courseId} and user_id = #{userId}
+    </delete>
+
+
+
+</mapper>

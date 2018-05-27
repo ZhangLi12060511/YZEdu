@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yzedu.dao.AboutDao">
+    <resultMap id="BaseResultMap" type="com.yzedu.vo.SchoolBean">
+        <id column=" school_id" jdbcType="INTEGER" property=" school_id"/>
+        <result column="school_code" jdbcType="VARCHAR" property="school_code"/>
+        <result column="school_name" jdbcType="VARCHAR" property="school_name"/>
+        <result column="school_badge" jdbcType="VARCHAR" property="school_badge"/>
+        <result column="school_introduce" jdbcType="VARCHAR" property="school_introduce"/>
+        <result column="school_background" jdbcType="VARCHAR" property="school_background"/>
+        <result column="school_city" jdbcType="VARCHAR" property="school_city"/>
+        <result column="school_province" jdbcType="VARCHAR" property="school_province"/>
+        <result column="school_type" jdbcType="INTEGER" property="school_type"/>
+
+    </resultMap>
+    <sql id="BaseProperty">
+      school_id,school_code,school_name,school_badge,school_introduce,school_background, school_city,school_province,school_type
+</sql>
+    <select id="getAboutList" resultMap="BaseResultMap" parameterType="Integer">
+        select <include refid="BaseProperty" />
+        from  school where school_id = #{schoolId} order by school_id desc
+    </select>
+
+</mapper>

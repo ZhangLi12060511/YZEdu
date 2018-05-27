@@ -2,25 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90db2eeb-e08e-4754-a1ab-e1fc35891ada" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/dao/BannerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/dao/HappyReadDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/dao/SchoolsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/dao/ShowCourseDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/service/BannerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/service/HappyReadService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/service/SchoolsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/service/ShowCourseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resource/mapping/BannerDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resource/mapping/HappyReadDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resource/mapping/SchoolsDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resource/mapping/ShowCourseDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/dao/AboutDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/dao/AnnouncementDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/dao/CourseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/dao/GeneralDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/dao/InformationDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/dao/MyCourseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/dao/SelectDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/obj/MyCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/obj/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/obj/Teacher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/obj/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/service/AboutService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/service/AnnouncementService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/service/CourseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/service/GeneralService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/service/InformationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/service/MyCourseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/service/SelectService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/util/MD5Tools.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/web/CourseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/web/GeneralController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/web/LearnController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/web/SchoolController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/web/TeachController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resource/mapping/AboutDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resource/mapping/AnnouncementDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resource/mapping/CourseDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resource/mapping/GeneralDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resource/mapping/InformationDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resource/mapping/MyCourseDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resource/mapping/SelectDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yzedu/config/MybatisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/config/MybatisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yzedu/util/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/util/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yzedu/vo/MessageBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/vo/MessageBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yzedu/vo/MyCourseBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/vo/MyCourseBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yzedu/vo/TeacherBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/vo/TeacherBean.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yzedu/web/PlatformController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yzedu/web/PlatformController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/config/MybatisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/config/MybatisConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/mapping/HappyReadDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resource/mapping/HappyReadDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/mapping/PlatformDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resource/mapping/PlatformDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/mapping/ShowCourseDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resource/mapping/ShowCourseDao.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/util/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/util/Constant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/MessageBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/MessageBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/vo/TeacherBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/vo/TeacherBean.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yzedu/web/PlatformController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yzedu/web/PlatformController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapping/HappyReadDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/HappyReadDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapping/PlatformDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/PlatformDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapping/ShowCourseDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapping/ShowCourseDao.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,53 +65,98 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="GeneralController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/web/GeneralController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-229">
-              <caret line="104" column="17" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
+            <state relative-caret-position="103">
+              <caret line="193" column="64" selection-start-line="193" selection-start-column="64" selection-end-line="193" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlatformController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/web/PlatformController.java">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/obj/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GeneralDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/dao/GeneralDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/UserBean.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="274">
-              <caret line="103" column="62" selection-start-line="103" selection-start-column="62" selection-end-line="103" selection-end-column="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HappyReadService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/service/HappyReadService.java">
+      <file leaf-file-name="GeneralService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/service/GeneralService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
-              <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+              <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#591#592#0" expanded="true" />
+                <element signature="e#660#661#0" expanded="true" />
+                <element signature="e#779#780#0" expanded="true" />
+                <element signature="e#846#847#0" expanded="true" />
+                <element signature="e#937#938#0" expanded="true" />
+                <element signature="e#993#994#0" expanded="true" />
+                <element signature="e#1697#1698#0" expanded="true" />
+                <element signature="e#1755#1756#0" expanded="true" />
+                <element signature="e#1785#1786#0" expanded="true" />
+                <element signature="e#1825#1826#0" expanded="true" />
+                <element signature="e#1876#1877#0" expanded="true" />
+                <element signature="e#1896#1897#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HappyReadDao.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resource/mapping/HappyReadDao.xml">
+      <file leaf-file-name="GeneralDao.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/resource/mapping/GeneralDao.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+            <state relative-caret-position="179">
+              <caret line="139" column="62" selection-start-line="139" selection-start-column="62" selection-end-line="139" selection-end-column="62" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HappyReadBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/HappyReadBean.java">
+      <file leaf-file-name="TeacherBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/TeacherBean.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="16" selection-end-column="42" />
+            <state relative-caret-position="370">
+              <caret line="19" column="33" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentBean.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/StudentBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="43">
+              <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="21" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -93,17 +167,21 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="spring-beans.schema" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>int</find>
+      <find>private</find>
+      <find>EGER</find>
       <find>;</find>
+      <find>account=</find>
     </findStrings>
     <replaceStrings>
+      <replace>INTEGER</replace>
       <replace>,</replace>
     </replaceStrings>
   </component>
@@ -113,57 +191,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/CommunicationImage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/CommunicationPraise.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/CourseBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/DynamicComment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/CourseMaterialBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/DynamicImage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/DynamicPraise.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/ExamBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/ExamItemBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/ExercisesBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/GradeBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/HappyReadBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/KnowledgeBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/LessonBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/LiveAnnouncementBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/LiveRoomBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/MessageBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/MistakeBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/MyCourseBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/MyPracticalTrainingBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/PracticalTrainingBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/SchoolBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/StudentBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/TaskBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/TeacherBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/UserBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/UserInfoBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/service/impl/PlatformService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/service/impl/PlatformServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/dao/PlatformDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/InformationBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/service/PlatformService.java" />
-        <option value="$PROJECT_DIR$/src/resource/mapping/PlatformDao.xml" />
-        <option value="$PROJECT_DIR$/src/resource/application.properties" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/util/PageModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/dao/BannerDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/service/BannerService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/util/Constant.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/config/MybatisConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/dao/SchoolsDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/service/SchoolsService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/dao/ShowCourseDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yzedu/service/ShowCourseService.java" />
-        <option value="$PROJECT_DIR$/src/resource/mapping/ShowCourseDao.xml" />
         <option value="$PROJECT_DIR$/src/resource/mapping/BannerDao.xml" />
         <option value="$PROJECT_DIR$/src/resource/mapping/SchoolsDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/yzedu/dao/HappyReadDao.java" />
-        <option value="$PROJECT_DIR$/src/resource/mapping/HappyReadDao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/yzedu/service/HappyReadService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/HappyReadBean.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/dao/AboutDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/service/AboutService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yzedu/web/PlatformController.java" />
+        <option value="$PROJECT_DIR$/src/resource/mapping/AboutDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/service/InformationService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/dao/AnnouncementDao.java" />
+        <option value="$PROJECT_DIR$/src/resource/mapping/HappyReadDao.xml" />
+        <option value="$PROJECT_DIR$/src/resource/mapping/PlatformDao.xml" />
+        <option value="$PROJECT_DIR$/src/resource/mapping/AnnouncementDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/service/AnnouncementService.java" />
+        <option value="$PROJECT_DIR$/src/resource/mapping/ShowCourseDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/dao/InformationDao.java" />
+        <option value="$PROJECT_DIR$/src/resource/mapping/InformationDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/web/SchoolController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/obj/MyCourse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/obj/SelectService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/MyCourseBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/MessageBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/dao/SelectDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/service/SelectService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/CourseBean.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/web/CourseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/dao/MyCourse.java" />
+        <option value="$PROJECT_DIR$/src/resource/mapping/SelectDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/dao/MyCourseDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/service/MyCourseService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/web/LearnController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/web/teachController.java" />
+        <option value="$PROJECT_DIR$/src/resource/mapping/MyCourseDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/obj/Teacher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/util/Constant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/dao/CourseDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/service/CourseService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/web/TeachController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/dao/General.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/vo/TeacherBean.java" />
+        <option value="$PROJECT_DIR$/src/resource/mapping/CourseDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/util/MD5Tools.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/obj/Student.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/dao/GeneralDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/obj/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/service/GeneralService.java" />
+        <option value="$PROJECT_DIR$/src/resource/mapping/GeneralDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yzedu/web/GeneralController.java" />
       </list>
     </option>
   </component>
@@ -179,6 +257,22 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="YZEdu" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="YZEdu" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="131" />
@@ -235,15 +329,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="yzedu" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="YZEdu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YZEdu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yzedu" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -253,7 +338,34 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="yzedu" type="462c0819:PsiDirectoryNode" />
+              <item name="obj" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YZEdu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YZEdu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yzedu" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YZEdu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YZEdu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yzedu" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YZEdu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YZEdu" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yzedu" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="YZEdu" type="b2602c69:ProjectViewProjectNode" />
@@ -291,7 +403,7 @@
     <property name="last_opened_file_path" value="D:/YZEdu/YZEdu" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="Errors" />
@@ -403,12 +515,12 @@
       <updated>1527250028623</updated>
       <workItem from="1527250031534" duration="1075000" />
       <workItem from="1527251139556" duration="11631000" />
-      <workItem from="1527300002422" duration="5460000" />
+      <workItem from="1527300002422" duration="53590000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18166000" />
+    <option name="totallyTimeSpent" value="66296000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -416,7 +528,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="9" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32980332" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info id="Capture Tool" order="8" />
       <window_info id="Designer" order="2" />
@@ -431,13 +543,14 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31993568" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31993568" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32905295" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32744783" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32636657" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25718608" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329582" />
       <window_info id="Learn" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" weight="0.32980332" />
@@ -446,8 +559,42 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31993568" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32905295" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" weight="0.32980332" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32636657" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.3279743" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32980332" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329582" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info id="Learn" order="6" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39967898" />
+      <window_info anchor="right" id="Bean Validation" order="8" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -457,314 +604,275 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/ExercisesBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/GradeBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/KnowledgeBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/LessonBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/LiveAnnouncementBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/LiveRoomBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/MessageBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/MistakeBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/MyCourseBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/MyPracticalTrainingBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/PracticalTrainingBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/StudentBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/TaskBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/TeacherBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/UserBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/UserInfoBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-159">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/service/impl/PlatformService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/service/impl/PlatformServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/AbilityBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="20" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/AnnouncementBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/CircleDynamicBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="22" column="64" selection-start-line="19" selection-start-column="55" selection-end-line="22" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_75/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="107" column="19" selection-start-line="107" selection-start-column="19" selection-end-line="107" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/InformationBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="187">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/util/PageModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="268" lean-forward="true" selection-start-line="268" selection-end-line="268" />
-          <folding>
-            <element signature="e#558#559#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resource/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resource/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-229">
-          <caret line="104" column="17" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
+        <state relative-caret-position="-30">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resource/mapping/Bfas.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/dao/InformationDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/config/MybatisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="33" column="82" selection-start-line="33" selection-start-column="82" selection-end-line="33" selection-end-column="82" />
+        <state relative-caret-position="332">
+          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/util/Constant.java">
+    <entry file="file://$PROJECT_DIR$/src/resource/mapping/InformationDao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        <state relative-caret-position="348">
+          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-27">
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        <state relative-caret-position="302">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/service/BannerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/BannerBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/dao/BannerDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/service/SchoolsService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/dao/AnnouncementDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
-          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#386#387#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/SchoolBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/service/ShowCourseService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+          <caret line="12" column="73" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/dao/PlatformDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/AnnouncementBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+        <state relative-caret-position="304">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/service/AnnouncementService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/service/PlatformService.java">
+    <entry file="file://$PROJECT_DIR$/src/resource/mapping/ShowCourseDao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        <state relative-caret-position="302">
+          <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resource/mapping/AnnouncementDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resource/mapping/SchoolsDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/obj/MyCourse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#449#450#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/dao/SchoolsDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/MessageBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="31" />
+        <state relative-caret-position="274">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/dao/SelectDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="27" column="22" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/dao/ShowCourseDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/web/SchoolController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="87" column="5" lean-forward="true" selection-start-line="72" selection-start-column="3" selection-end-line="87" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/service/SelectService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="43" column="51" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
+            <element signature="e#696#697#0" expanded="true" />
+            <element signature="e#745#746#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resource/mapping/AboutDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" selection-start-line="1" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/web/CourseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="95" selection-start-line="95" selection-end-line="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resource/mapping/SelectDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resource/mapping/PlatformDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/MistakeBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/web/PlatformController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <caret line="47" column="67" lean-forward="true" selection-start-line="45" selection-start-column="7" selection-end-line="47" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/CourseMaterialBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/PracticalTrainingBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="14" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/KnowledgeBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/MyCourseBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/GradeBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/dao/MyCourseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="28" column="4" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/AbilityBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="17" column="33" lean-forward="true" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/service/MyCourseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="48" column="21" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+            <element signature="e#879#880#0" expanded="true" />
+            <element signature="e#1376#1377#0" expanded="true" />
+            <element signature="e#1438#1439#0" expanded="true" />
+            <element signature="e#1495#1496#0" expanded="true" />
+            <element signature="e#1542#1543#0" expanded="true" />
+            <element signature="e#1617#1618#0" expanded="true" />
+            <element signature="e#1666#1667#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/web/LearnController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="162" column="8" selection-start-line="162" selection-start-column="8" selection-end-line="164" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -773,77 +881,191 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/CourseBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="16" column="35" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resource/mapping/BannerDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="12" column="80" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resource/mapping/PlatformDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="3" column="70" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resource/mapping/SchoolsDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resource/mapping/ShowCourseDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="30" column="10" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="30" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/dao/HappyReadDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/HappyReadBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="16" selection-end-column="42" />
+        <state relative-caret-position="34">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/resource/mapping/HappyReadDao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+        <state relative-caret-position="487">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/service/HappyReadService.java">
+    <entry file="file://$PROJECT_DIR$/src/resource/mapping/MyCourseDao.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        <state relative-caret-position="-1450">
+          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/obj/Teacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/web/PlatformController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/util/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/service/CourseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="87" column="32" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#872#873#0" expanded="true" />
+            <element signature="e#915#916#0" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
+            <element signature="e#944#945#0" expanded="true" />
+            <element signature="e#1211#1212#0" expanded="true" />
+            <element signature="e#1269#1270#0" expanded="true" />
+            <element signature="e#2143#2144#0" expanded="true" />
+            <element signature="e#2190#2191#0" expanded="true" />
+            <element signature="e#2886#2887#0" expanded="true" />
+            <element signature="e#2953#2954#0" expanded="true" />
+            <element signature="e#3468#3469#0" expanded="true" />
+            <element signature="e#3511#3512#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/web/TeachController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="75" column="5" lean-forward="true" selection-start-line="58" selection-start-column="4" selection-end-line="75" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/TaskBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resource/mapping/CourseDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="112" column="13" lean-forward="true" selection-start-line="112" selection-start-column="13" selection-end-line="112" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/dao/CourseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="49" column="87" selection-start-line="49" selection-start-column="82" selection-end-line="49" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/TeacherBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/StudentBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="21" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/util/MD5Tools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/obj/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/vo/UserBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
-          <caret line="103" column="62" selection-start-line="103" selection-start-column="62" selection-end-line="103" selection-end-column="62" />
+          <caret line="14" column="47" lean-forward="true" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/obj/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/dao/GeneralDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/service/GeneralService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#846#847#0" expanded="true" />
+            <element signature="e#937#938#0" expanded="true" />
+            <element signature="e#993#994#0" expanded="true" />
+            <element signature="e#1697#1698#0" expanded="true" />
+            <element signature="e#1755#1756#0" expanded="true" />
+            <element signature="e#1785#1786#0" expanded="true" />
+            <element signature="e#1825#1826#0" expanded="true" />
+            <element signature="e#1876#1877#0" expanded="true" />
+            <element signature="e#1896#1897#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resource/mapping/GeneralDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="139" column="62" selection-start-line="139" selection-start-column="62" selection-end-line="139" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yzedu/web/GeneralController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="193" column="64" selection-start-line="193" selection-start-column="64" selection-end-line="193" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

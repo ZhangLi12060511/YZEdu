@@ -44,7 +44,7 @@ public class PlatformController {
                                              ModelAndView modelAndView){
         List<InformationBean> ibs = platformService.getInformations();
         //对List进行分页处理
-        PageModel pageModel=new PageModel(ibs,2);
+        PageModel pageModel=new PageModel(ibs,12);
         List<InformationBean> sublist = pageModel.getObjects(page);
         for(InformationBean ib: ibs){
             if(ib.getInformation_images()!=null) {
@@ -85,7 +85,7 @@ public class PlatformController {
 
         List<CourseBean> courseBeanList = showCourseService.showCourseList();
         //对List进行分页处理
-        PageModel pageModel=new PageModel(courseBeanList,2);
+        PageModel pageModel=new PageModel(courseBeanList,12);
         List<InformationBean> sublist = pageModel.getObjects(page);
 
         modelAndView.addObject("result_code",Constant.SUCCESS_CODE);

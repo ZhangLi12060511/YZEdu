@@ -10,7 +10,7 @@ import lombok.Data;
 public class MyCourseBean {
 	
 	private int course_id;	// 课程id
-	// 通过course_id找到course表中的数据
+	// 通过course_id找到course表中的数据,可以直接封装为一个VO类
     private String course_name;         // 课程名称
     private int course_sum_student;     // 课程容量人数
     private int course_learn_student;   // 课程学习人数

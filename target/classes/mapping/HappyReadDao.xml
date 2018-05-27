@@ -17,7 +17,7 @@
     </sql>
     <select id="getHappyReadList" resultMap="BaseResultMap">
         select <include refid="BaseProperty"/>
-        from happy_read order by happy_read_id desc
+        from happy_read where gmt_del = 0 order by happy_read_id desc limit 10
     </select>
     
 </mapper>

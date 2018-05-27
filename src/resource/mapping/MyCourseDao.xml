@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yzedu.dao.MyCourseDao">
+    <resultMap id="BaseResultMap" type="com.yzedu.vo.MyCourseBean">
+        <id column="course_id" jdbcType="INTEGER" property="course_id"/>
+        <result column="course_name" jdbcType="VARCHAR" property="course_name"/>
+        <result column="course_sum_student" jdbcType="VARCHAR" property="course_sum_student"/>
+        <result column="course_learn_student" jdbcType="VARCHAR" property="course_learn_student"/>
+        <result column="course_cover" jdbcType="VARCHAR" property="course_cover"/>
+        <result column="course_sum" jdbcType="VARCHAR" property="course_sum"/>
+        <result column="course_price" jdbcType="VARCHAR" property="course_price"/>
+        <result column="learn_state" jdbcType="VARCHAR" property="learn_state"/>
+    </resultMap>
+
+    <resultMap id="MistakeBeanMap" type="com.yzedu.vo.MistakeBean">
+        <id column=" mistake_id" jdbcType="INTEGER" property=" mistake_id"/>
+        <result column="exam_item_question" jdbcType="VARCHAR" property="exam_item_question"/>
+        <result column="exam_item_type" jdbcType="INTEGER" property="exam_item_type"/>
+        <result column="exam_item_option1" jdbcType="VARCHAR" property="exam_item_option1"/>
+        <result column="exam_item_option2" jdbcType="VARCHAR" property="exam_item_option2"/>
+        <result column="exam_item_option3" jdbcType="VARCHAR" property="exam_item_option3"/>
+        <result column="exam_item_option4" jdbcType="VARCHAR" property="exam_item_option4"/>
+        <result column="exam_item_answer" jdbcType="VARCHAR" property="exam_item_answer"/>
+        <result column="student_answer" jdbcType="VARCHAR" property="student_answer"/>
+        <result column="mistake_note" jdbcType="VARCHAR" property=" mistake_note"/>
+    </resultMap>
+
+    <resultMap id="TaskBeanMap" type="com.yzedu.vo.TaskBean">
+        <id column="task_id" jdbcType="INTEGER" property="task_id"/>
+        <result column="task_state" jdbcType="INTEGER" property="task_state"/>
+        <result column="task_name" jdbcType="INTEGER" property="task_name"/>
+        <result column="task _type" jdbcType="INTEGER" property="task_type"/>
+        <result column="task_start_time" jdbcType="VARCHAR" property="task_start_time"/>
+        <result column="task_end_time" jdbcType="VARCHAR" property="task_end_time"/>
+        <result column="task_publish" jdbcType="VARCHAR" property="task_publish"/>
+        <result column="task_link" jdbcType="VARCHAR" property="task_link"/>
+        <result column="gmt_create" jdbcType="VARCHAR" property="task_date"/>
+    </resultMap>
+
+    <resultMap id="GradeBeanMap" type="com.yzedu.vo.GradeBean">
+        <result column="student_id" jdbcType="INTEGER" property="student_id"/>
+        <result column="student_name" jdbcType="INTEGER" property="student_name"/>
+        <result column="course_name" jdbcType="INTEGER" property="course_name"/>
+        <result column="grade_mark" jdbcType="INTEGER" property="grade_mark"/>
+    </resultMap>
+
+    <select id="getMyCourseList" parameterType="INTEGER" resultMap="MistakeBeanMap">
+    SELECT  m.course_id,
+          c.course_name,
+          c.course_sum_student,
+          c.course_learn_student,
+          c.course_cover,
+          c.course_sum,
+          c.course_price,
+          learn_state FROM mycourse as m LEFT JOIN course as c ON m.course_id = c.course_id WHERE m.user_id=#{userId} and c.course_type != 4
+    </select>
+
+    <select id="getMistakeList" resultMap="MistakeBeanMap">
+      SELECT  mistake_id,
+	  exam_item_question,
+	  exam_item_type,
+	  exam_item_option1,
+	  exam_item_option2,
+	  exam_item_option3,
+	  exam_item_option4,
+	  exam_item_answer,
+	  student_answer,
+	  mistake_note FROM mistake as m LEFT JOIN exam_item as e ON m.exam_item_id=e.exam_item_id
+      WHERE m.student_id=(SELECT student_id FROM student WHERE user_id=#{userId}) and m.course_id=#{courseId}
+    </select>
+
+    <select id="getKnowledgeList" parameterType="INTEGER" resultType="com.yzedu.vo.KnowledgeBean">
+        select knowledge_id,knowledge_content,knowledge_rank from knowledge
+        where lesson_id = #{lessonId} order by knowledge_id desc
+    </select>
+
+    <select id="getCourseMaterialList" parameterType="INTEGER" resultType="com.yzedu.vo.CourseMaterialBean">
+        select course_material_id,course_material_name,course_material_url,course_material_size from course_material
+        where course_id = #{courseId} order by course_material_id desc
+    </select>
+
+    <select id="getMyPracticalTrainingList" parameterType="INTEGER" resultMap="BaseResultMap">
+                SELECT
+            m.course_id,
+            c.course_name,
+            c.course_sum_student,
+            c.course_learn_student,
+            c.course_cover,
+            c.course_sum,
+            c.course_price,
+            m.learn_state
+        FROM
+            mycourse AS m
+        LEFT JOIN course AS c ON m.course_id = c.course_id WHERE c.course_type=4 AND m.user_id=#{userId}
+    </select>
+
+    <select id="getPracticalTrainingList" parameterType="INTEGER" resultType="com.yzedu.vo.PracticalTrainingBean">
+	  select practical_training_id,
+	  practical_training_describe,
+	  practical_training_plan from practical_training where course_id=#{courseId} order by practical_training_id desc
+    </select>
+    
+    <select id="getTask" resultMap="TaskBeanMap">
+          SELECT   t.task_id,
+	  t.task_state,
+	  t.task_name,
+	  t.task_start_time,
+	  t.task_end_time,
+	  t.task_publish,
+	  t.task_link,
+	  t.gmt_create,
+	  t.task_type FROM task as t LEFT JOIN my_task as mt ON t.task_id=mt.task_id WHERE mt.student_id=#{studentId} AND t.task_state=#{state}
+    </select>
+
+    <select id="getGrade" parameterType="INTEGER" resultMap="GradeBeanMap">
+
+        SELECT
+            g.student_id,
+            s.student_name,
+            c.course_name,
+            g.grade_mark
+        FROM
+            grade AS g
+        LEFT JOIN student AS s ON g.student_id = s.student_id
+        LEFT JOIN course AS c ON g.grade_course = c.course_id WHERE g.student_id=#{studentId}
+
+    </select>
+
+
+    <select id="getAbility" parameterType="Integer" resultType="com.yzedu.vo.AbilityBean">
+
+      select student_id,
+	  ability_theory,
+	  ability_practice,
+	  ability_language,
+	  ability_innovate,
+	  ability_think,
+	  ability_teamwork from ability where student_id=#{studentId}
+    </select>
+</mapper>

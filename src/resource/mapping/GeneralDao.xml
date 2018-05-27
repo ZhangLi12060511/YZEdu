@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yzedu.dao.GeneralDao">
+    <resultMap id="UserBeanMap" type="com.yzedu.vo.UserBean">
+        <id column="user_id" jdbcType="INTEGER" property="user_id"/>
+        <result column="user_avatar" jdbcType="VARCHAR" property="user_avatar"/>
+        <result column="user_phone" jdbcType="VARCHAR" property="user_phone"/>
+        <result column="user_sex" jdbcType="VARCHAR" property="user_sex"/>
+        <result column="user_age" jdbcType="INTEGER" property="user_age"/>
+    </resultMap>
+    <resultMap id="StudentBeanMap" type="com.yzedu.vo.StudentBean">
+        <id column="student_id" jdbcType="INTEGER" property="student_id"/>
+        <result column="user_id " jdbcType="INTEGER" property="user_id "/>
+        <result column="user_avatar" jdbcType="VARCHAR" property="user_avatar"/>
+        <result column="user_phone" jdbcType="VARCHAR" property="user_phone"/>
+        <result column="user_sex" jdbcType="VARCHAR" property="user_sex"/>
+        <result column="user_age" jdbcType="INTEGER" property="user_age"/>
+        <result column="student_name" jdbcType="VARCHAR" property="student_name"/>
+        <result column="student_number" jdbcType="VARCHAR" property="student_number"/>
+        <result column="school_id" jdbcType="INTEGER" property="school_id"/>
+        <result column="school_name" jdbcType="VARCHAR" property="school_name"/>
+    </resultMap>
+    <resultMap id="TeacherBeanMap" type="com.yzedu.vo.TeacherBean">
+        <id column="teacher_id" jdbcType="INTEGER" property="teacher_id"/>
+        <result column="user_id " jdbcType="INTEGER" property="user_id "/>
+        <result column="user_avatar" jdbcType="VARCHAR" property="user_avatar"/>
+        <result column="user_phone" jdbcType="VARCHAR" property="user_phone"/>
+        <result column="user_sex" jdbcType="VARCHAR" property="user_sex"/>
+        <result column="user_age" jdbcType="INTEGER" property="user_age"/>
+        <result column="teacher_name" jdbcType="VARCHAR" property="teacher_name"/>
+        <result column="teacher_number" jdbcType="VARCHAR" property="teacher_number"/>
+        <result column="school_id" jdbcType="INTEGER" property="school_id"/>
+        <result column="school_name" jdbcType="VARCHAR" property="school_name"/>
+    </resultMap>
+
+
+
+    <select id="selectByUserAccount" parameterType="String" resultMap="UserBeanMap">
+        select   user_id,
+      user_avatar,
+      user_phone,
+      user_sex,
+      user_age  from user where  user_phone=#{user_account}
+    </select>
+    <select id="selectByUserId" parameterType="Integer" resultType="com.yzedu.obj.User">
+        select  * from user where  user_id=#{user_id}
+    </select>
+    
+    <select id="studentLogin" parameterType="Integer" resultMap="StudentBeanMap">
+              SELECT
+            u.user_id,
+            u.user_phone,
+            u.user_sex,
+            u.user_age,
+            u.user_avatar,
+            stu.student_id,
+            stu.student_name,
+            stu.student_number,
+            sch.school_id,
+            sch.school_name
+        FROM
+            student AS stu
+        INNER JOIN `user` AS u ON stu.user_id = u.user_id
+        INNER JOIN school AS sch ON stu.school_id = sch.school_id WHERE stu.user_id=#{user_id}
+    </select>
+
+    <select id="teacherLogin" parameterType="Integer" resultMap="TeacherBeanMap">
+                  SELECT
+            u.user_id,
+            u.user_phone,
+            u.user_sex,
+            u.user_age,
+            u.user_avatar,
+            te.teacher_id,
+            te.teacher_name,
+            te.teacher_number,
+            sch.school_id,
+            sch.school_name
+        FROM
+            teacher AS te
+        INNER JOIN `user` AS u ON te.user_id = u.user_id
+        INNER JOIN school AS sch ON te.school_id = sch.school_id WHERE te.user_id=#{user_id}
+
+    </select>
+
+    <select id="studentLoginBySchool" resultMap="StudentBeanMap">
+        SELECT
+            u.user_id,
+            u.user_phone,
+            u.user_sex,
+            u.user_age,
+            u.user_avatar,
+            stu.student_id,
+            stu.student_name,
+            stu.student_number,
+            sch.school_id,
+            sch.school_name
+        FROM
+            student AS stu
+        INNER JOIN `user` AS u ON stu.user_id = u.user_id
+        INNER JOIN school AS sch ON stu.school_id = sch.school_id WHERE stu.student_number=#{user_account} AND stu.school_id=#{school_id}
+    </select>
+
+    <select id="teacherLoginByschool" resultMap="TeacherBeanMap">
+        SELECT
+            u.user_id,
+            u.user_phone,
+            u.user_sex,
+            u.user_age,
+            u.user_avatar,
+            te.teacher_id,
+            te.teacher_name,
+            te.teacher_number,
+            sch.school_id,
+            sch.school_name
+        FROM
+            teacher AS te
+        INNER JOIN `user` AS u ON te.user_id = u.user_id
+        INNER JOIN school AS sch ON te.school_id = sch.school_id  WHERE te.teacher_number=#{user_account} AND te.school_id=#{school_id}
+    </select>
+
+    <select id="selectByStudentNumber" parameterType="String" resultType="com.yzedu.obj.Student">
+        select * from student where student_number=#{student_number}
+    </select>
+
+    <select id="selectByTeacherNumber" parameterType="String" resultType="com.yzedu.obj.Teacher">
+        select * from teacher where teacher_number=#{teacher_number}
+    </select>
+
+    <select id="selectByPhone" parameterType="String" resultType="com.yzedu.obj.User">
+        select * from  `user` where user_phone=#{user_phone}
+    </select>
+
+    <insert id="addUser" parameterType="com.yzedu.obj.User">
+        insert into `user`(user_account,user_password,user_phone,user_sex,user_age,user_avatar,gmt_create,gmt_modified)
+        values (#{user_account},#{user_password},#{user_phone}#{user_sex},#{user_age},#{user_avatar},now(),now())
+
+    </insert>
+
+    <update id="modifyInfo" parameterType="com.yzedu.obj.User">
+        update `user` set user_phone = #{user_phone},user_sex=#{user_sex},user_age=#{user_age}
+         where user_id=#{user_id}
+    </update>
+
+    <update id="modifyAvatar" parameterType="com.yzedu.obj.User">
+        update `user` set user_avatar = #{user_avatar}
+         where user_id=#{user_id}
+    </update>
+
+</mapper>

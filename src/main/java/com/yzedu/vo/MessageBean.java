@@ -16,5 +16,6 @@ public class MessageBean {
 	private String message_link; // 消息关联内容
 	private String message_date; // 消息创建日期（gmt_create）
 	private int message_read; // 消息是否已读（1表示已读，0表示未读）
+	private int user_id;      //用户id
 
 }

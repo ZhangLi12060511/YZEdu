@@ -6,7 +6,7 @@
 
   <groupId>com.YZEdu</groupId>
   <artifactId>YZEdu</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>war</packaging>
 
   <name>YZEdu</name>

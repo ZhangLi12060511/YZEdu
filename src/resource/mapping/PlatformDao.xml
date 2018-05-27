@@ -28,7 +28,7 @@ SELECT
   platform_image.platform_image_url as imformation_cover,
 	platform_image_url
 from platform_image left join platform_information on platform_information.platform_information_id = platform_image.platform_information_id
-order by platform_information.gmt_create desc
+ where platform_information.gmt_del = 0 order by platform_information.gmt_create desc
 
     </select>
 

@@ -32,6 +32,6 @@
 
     <select id="showCourseList" resultMap="BaseResultMap">
         select <include refid="BaseProperty" />
-        from course order  by gmt_create desc
+        from course order  by gmt_create
     </select>
 </mapper>

@@ -17,7 +17,7 @@ public class TeacherBean {
     
     private String teacher_id;          // 教师id
     private String teacher_name;        // 教师姓名
-    private String student_number;		// 教师工号
+    private String teacher_number;		// 教师工号
     
     private int school_id;					// 学校id
     private String school_name;		// 学校名称
