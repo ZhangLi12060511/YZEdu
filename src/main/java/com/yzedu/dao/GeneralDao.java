@@ -42,13 +42,13 @@ public interface GeneralDao {
 
     List<MessageBean> getMessageList(@Param("user_id") Integer user_id);
 
-    void updateMessage(@Param("message_id") Integer message_id,@Param("user_id ") Integer user_id);
+    void updateMessage(@Param("messageId") Integer message_id,@Param("userId") Integer user_id);
 
-    void clearMessage(@Param("user_id ") Integer user_id);
+    void clearMessage(@Param("userId") Integer user_id);
 
     void insertAdvice(@Param("advice_content") String advice_content);
 
-    void bindStudent(@Param("user_id") Integer user_id,@Param("input_id") Integer input_id);
+    void bindUser(@Param("user_id") Integer user_id,@Param("input_id") String input_id);
 
     void bindTeacher(@Param("user_id") Integer user_id,@Param("input_id") Integer input_id);
 
@@ -56,7 +56,7 @@ public interface GeneralDao {
 
     void unbindTeacher(@Param("user_id") Integer user_id,@Param("input_id") Integer input_id);
 
-    Student selectByStudentId(@Param("student_id") Integer student_id);
+    Student selectByStudentId(@Param("student_id") String student_id);
 
-    Teacher selectByTeacherId(@Param("teacher_id") Integer teacher_id);
+    Teacher selectByTeacherId(@Param("teacher_id") String teacher_id);
 }

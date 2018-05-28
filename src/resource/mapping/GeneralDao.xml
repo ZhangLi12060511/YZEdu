@@ -136,13 +136,13 @@
         select * from teacher where teacher_number=#{teacher_number}
     </select>
 
-    <select id="selectByPhone" parameterType="String" resultType="com.yzedu.obj.User">
+    <select id="selectByPhone" parameterType="String" resultMap="UserBeanMap">
         select * from  `user` where user_phone=#{user_phone}
     </select>
 
     <insert id="addUser" parameterType="com.yzedu.obj.User">
-        insert into `user`(user_account,user_password,user_phone,user_sex,user_age,user_avatar,gmt_create,gmt_modified)
-        values (#{user_account},#{user_password},#{user_phone}#{user_sex},#{user_age},#{user_avatar},now(),now())
+        insert into `user`(user_account,user_password,user_phone,user_sex,user_age,gmt_create,gmt_modified)
+        values (#{user_account},#{user_password},#{user_phone},#{user_sex},#{user_age},now(),now())
 
     </insert>
 
@@ -161,12 +161,12 @@
           from message where user_id = #{user_id} and gmt_del = 0
     </select>
 
-    <update id="updateMessage">
-        update message set message_read = 1 where message = #{message_id} and user_id = #{user_id}
+    <update id="updateMessage" parameterType="Integer">
+        update message set message_read = 1 where message_id = #{messageId} and user_id = #{userId}
     </update>
 
     <update id="clearMessage" parameterType="Integer">
-        update message set gmt_del = 1 where user_id = #{user_id}
+        update message set gmt_del = 1 where user_id = #{userId}
     </update>
 
     <insert id="insertAdvice" parameterType="String">
@@ -174,13 +174,11 @@
     </insert>
 
 
-    <update id="bindStudent">
-        update student set user_id = #{user_id} where student_id = #{input_id}
+    <update id="bindUser">
+        update user set user_phone = #{input_id} where user_id = #{user_id}
     </update>
 
-    <update id="bindTeacher">
-        update teacher set user_id = #{user_id} where teacher_id = #{input_id}
-    </update>
+ 
 
     <update id="unbindStudent">
         update student set user_id = #{user_id} where student_id = #{input_id}
@@ -190,11 +188,11 @@
         update teacher set user_id = #{user_id} where teacher_id = #{input_id}
     </update>
 
-    <select id="selectByStudentId" parameterType="Integer" resultType="com.yzedu.obj.Student">
+    <select id="selectByStudentId" parameterType="String" resultType="com.yzedu.obj.Student">
         select * from student where student_id=#{student_id} and user_id=0
     </select>
 
-    <select id="selectByTeacherId" parameterType="Integer" resultType="com.yzedu.obj.Student">
+    <select id="selectByTeacherId" parameterType="String" resultType="com.yzedu.obj.Student">
         select * from teacher where teacher_id=#{teacher_id} and user_id=0
     </select>
 

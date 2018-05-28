@@ -80,7 +80,7 @@ public class GeneralController {
                     modelAndView.addObject("return_data", userBean);
                     return  modelAndView.getModel();
                 }
-                modelAndView.addObject("result_code",81);
+                modelAndView.addObject("result_code",82);
                 modelAndView.addObject("message","登录成功");
                 modelAndView.addObject("return_data", teacherBean);
                 return  modelAndView.getModel();
@@ -150,7 +150,7 @@ public class GeneralController {
         }
         return modelAndView.getModel();
     }
-    @ApiOperation("用户账号登录")
+    @ApiOperation("注册手机号")
     @RequestMapping(value = "/Register",method = RequestMethod.POST)
     public Map<String,Object> AccountLogin(ModelAndView modelAndView,
                                            @ApiParam(value = "手机号")@RequestParam(required = true) String user_phone,
@@ -158,7 +158,7 @@ public class GeneralController {
                                            @ApiParam(value = "性别")@RequestParam(required = true) String user_sex,
                                            @ApiParam(value = "年龄")@RequestParam(required = true) Integer user_age){
         UserBean userBean = generalService.selectByPhone(user_phone);
-        if(userBean == null){
+        if(userBean != null){
             modelAndView.addObject("result_code",12301);
             modelAndView.addObject("message","注册失败，该手机号已被注册");
             modelAndView.addObject("return_data", null);
@@ -248,12 +248,21 @@ public class GeneralController {
     @RequestMapping(value = "/Bound",method = RequestMethod.GET)
     public Map<String,Object> advice(ModelAndView modelAndView,
                                      @ApiParam(value = "用户id")@RequestParam(required = true) Integer  user_id,
-                                     @ApiParam(value = "输入id")@RequestParam(required = true) Integer  input_id,
+                                     @ApiParam(value = "输入id")@RequestParam(required = true) String  input_id,
                                      @ApiParam(value = "用户类型")@RequestParam(required = true) Integer  user_type){
+    	
+    	
+    	 UserBean userBean = generalService.selectByPhone(input_id);
+         if(userBean != null){
+             modelAndView.addObject("result_code",12301);
+             modelAndView.addObject("message","绑定失败，该手机号已被绑定");
+             modelAndView.addObject("return_data", null);
+             return  modelAndView.getModel();
+         }
         if(user_type == 1){
             Student student = generalService.selectByStudentId(input_id);
             if(student == null){
-                generalService.bindStudent(user_id,input_id);
+                generalService.bindUser(user_id,input_id);
                 modelAndView.addObject("result_code",0);
                 modelAndView.addObject("message","绑定成功");
                 modelAndView.addObject("return_data", null);
@@ -267,7 +276,7 @@ public class GeneralController {
         if(user_type == 2){
                 Teacher teacher = generalService.selectByTeacherId(input_id);
                 if(teacher == null){
-                    generalService.bindTeacher(user_id,input_id);
+                    generalService.bindUser(user_id,input_id);
                     modelAndView.addObject("result_code",0);
                     modelAndView.addObject("message","绑定成功");
                     modelAndView.addObject("return_data", null);
