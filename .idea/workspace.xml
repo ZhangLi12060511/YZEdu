@@ -59,6 +59,12 @@
       <select />
     </treeState>
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="131" />
+    <option name="y" value="94" />
+    <option name="width" value="1346" />
+    <option name="height" value="728" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -110,6 +116,10 @@
       </pane>
       <pane id="Scope" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
