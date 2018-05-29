@@ -65,19 +65,19 @@ public class GeneralService {
     public void modifyAvatar(User user){
         generalDao.modifyAvatar(user);
     }
-    public List<MessageBean> getMessageList( Integer user_id){
+    public List<MessageBean> getMessageList(Integer user_id){
         return generalDao.getMessageList(user_id);
     }
 
-    public void updateMessage( Integer message_id, Integer user_id){
+    public void updateMessage(Integer message_id, Integer user_id){
         generalDao.updateMessage(message_id,user_id);
     }
 
-    public void clearMessage( Integer user_id){
+    public void clearMessage(Integer user_id){
         generalDao.clearMessage(user_id);
     }
 
-    public void insertAdvice( String advice_content){
+    public void insertAdvice(String advice_content){
         generalDao.insertAdvice(advice_content);
     }
 
@@ -89,20 +89,18 @@ public class GeneralService {
         generalDao.unbindTeacher(user_id,input_id);
     }
 
-    public Student selectByStudentId(Integer student_id){
+    public Student selectByStudentId(String student_id){
         return generalDao.selectByStudentId(student_id);
     }
 
-    public Teacher selectByTeacherId(Integer teacher_id){
+    public Teacher selectByTeacherId(String teacher_id){
         return generalDao.selectByTeacherId(teacher_id);
     }
 
-    public void bindStudent(Integer user_id,Integer input_id){
-        generalDao.bindStudent(user_id,input_id);
+    public void bindUser(Integer user_id,String input_id){
+        generalDao.bindUser(user_id,input_id);
     }
 
-    public void bindTeacher( Integer user_id, Integer input_id){
-        generalDao.bindStudent(user_id,input_id);
-    }
+    
 
 }

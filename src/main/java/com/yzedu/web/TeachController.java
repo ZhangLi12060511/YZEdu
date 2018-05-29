@@ -57,7 +57,7 @@ public class TeachController {
         return  modelAndView.getModel();
     }
     @ApiOperation("删除一节课")
-    @RequestMapping(value = "/DeleteLesson",method = RequestMethod.GET)
+    @RequestMapping(value = "/DeleteLesson",method = RequestMethod.POST)
     public Map<String,Object>  DeleteLesson(ModelAndView modelAndView,
                                            @ApiParam(value = "教师id")@RequestParam(required = true) Integer teacher_id,
                                            @ApiParam(value = "一节课id")@RequestParam(required = true) Integer lesson_id){
@@ -75,7 +75,7 @@ public class TeachController {
         return  modelAndView.getModel();
     }
     @ApiOperation("新增一个知识点")
-    @RequestMapping(value = "/AddKnowledge",method = RequestMethod.GET)
+    @RequestMapping(value = "/AddKnowledge",method = RequestMethod.POST)
     public Map<String,Object>  AddKnowledge(ModelAndView modelAndView,
                                             @ApiParam(value = "教师id")@RequestParam(required = true) Integer teacher_id,
                                             @ApiParam(value = "一节课id")@RequestParam(required = true) Integer lesson_id
@@ -94,24 +94,24 @@ public class TeachController {
         return  modelAndView.getModel();
     }
     @ApiOperation("删除一个知识点")
-    @RequestMapping(value = "/DeleteKnowledge",method = RequestMethod.GET)
+    @RequestMapping(value = "/DeleteKnowledge",method = RequestMethod.POST)
     public Map<String,Object>  DeleteKnowledge(ModelAndView modelAndView,
                                             @ApiParam(value = "教师id")@RequestParam(required = true) Integer teacher_id,
                                             @ApiParam(value = "知识id")@RequestParam(required = true) Integer knowledge_id){
         Teacher teacher = courseService.getTeacherById(teacher_id);
         if(teacher == null){
             modelAndView.addObject("result_code",9501);
-            modelAndView.addObject("message","添加失败，权限不足");
+            modelAndView.addObject("message","删除失败，权限不足");
             modelAndView.addObject("return_data",null );
         }
         courseService.deleteKnowledge(knowledge_id);
         modelAndView.addObject("result_code",Constant.SUCCESS_CODE);
-        modelAndView.addObject("message","添加成功！");
+        modelAndView.addObject("message","删除成功！");
         modelAndView.addObject("return_data", null);
         return  modelAndView.getModel();
     }
     @ApiOperation("修改课程信息")
-    @RequestMapping(value = "/ModifyCourse",method = RequestMethod.GET)
+    @RequestMapping(value = "/ModifyCourse",method = RequestMethod.POST)
     public Map<String,Object>  ModifyCourse(ModelAndView modelAndView,
                                                @ApiParam(value = "教师id")@RequestParam(required = true) Integer teacher_id,
                                                @ApiParam(value = "课程id")@RequestParam(required = true) Integer course_id,
@@ -132,7 +132,7 @@ public class TeachController {
         return  modelAndView.getModel();
     }
     @ApiOperation("新增课程资料")
-    @RequestMapping(value = "/AddMaterial",method = RequestMethod.GET)
+    @RequestMapping(value = "/AddMaterial",method = RequestMethod.POST)
     public Map<String,Object>  AddMaterial(ModelAndView modelAndView,
                                             @ApiParam(value = "教师id")@RequestParam(required = true) Integer teacher_id,
                                             @ApiParam(value = "课程id")@RequestParam(required = true) Integer course_id,
@@ -152,7 +152,7 @@ public class TeachController {
         return  modelAndView.getModel();
     }
     @ApiOperation("删除课程资料")
-    @RequestMapping(value = "/DeleteMaterial",method = RequestMethod.GET)
+    @RequestMapping(value = "/DeleteMaterial",method = RequestMethod.POST)
     public Map<String,Object>  DeleteMaterial(ModelAndView modelAndView,
                                            @ApiParam(value = "教师id")@RequestParam(required = true) Integer teacher_id,
                                            @ApiParam(value = "资料id")@RequestParam(required = true) Integer material_id){
@@ -169,7 +169,7 @@ public class TeachController {
         return  modelAndView.getModel();
     }
     @ApiOperation("修改课程封面")
-    @RequestMapping(value = "/ModifyCourseCover",method = RequestMethod.GET)
+    @RequestMapping(value = "/ModifyCourseCover",method = RequestMethod.POST)
     public Map<String,Object>  DeleteMaterial(ModelAndView modelAndView,
                                               @ApiParam(value = "教师id")@RequestParam(required = true) Integer teacher_id,
                                               @ApiParam(value = "课程id")@RequestParam(required = true) Integer course_id,
@@ -233,7 +233,7 @@ public class TeachController {
         return  modelAndView.getModel();
     }
     @ApiOperation("我的全部任务列表")
-    @RequestMapping(value = "/Mytask",method = RequestMethod.POST)
+    @RequestMapping(value = "/Mytask",method = RequestMethod.GET)
     public Map<String,Object>  Mytask(ModelAndView modelAndView,
                                                 @ApiParam(value = "教师id")@RequestParam(required = true) Integer teacher_id,
                                                 @ApiParam(value = "状态")@RequestParam(required = true) Integer state){
@@ -251,7 +251,7 @@ public class TeachController {
     }
 
     @ApiOperation("发布新任务")
-    @RequestMapping(value = "/NewTask",method = RequestMethod.GET)
+    @RequestMapping(value = "/NewTask",method = RequestMethod.POST)
     public Map<String,Object>  NewTask(ModelAndView modelAndView,
                                       @ApiParam(value = "教师id")@RequestParam(required = true) Integer teacher_id,
                                        @ApiParam(value = "课程id")@RequestParam(required = true) Integer course_id,
